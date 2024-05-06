@@ -1,0 +1,24 @@
+﻿@page "/Component"
+
+<h2>Największe dzieła Adama Mickiewicza</h2>
+
+<ul>
+    <li>"Pan Tadeusz" - epopeja narodowa opisująca życie szlachty polskiej w XIX wieku.</li>
+    <li>"Dziady" - dramat poetycki, uważany za jedno z najważniejszych dzieł polskiego romantyzmu.</li>
+    <li>"Sonety krymskie" - zbiór sonetów opisujących wrażenia poety z podróży na Krym.</li>
+    <li>"Ballady i romanse" - kolekcja ballad i romansów, w których Mickiewicz porusza różnorodne tematy.</li>
+</ul>
+
+<style>
+    /* Dodajmy animację, która pojawia się, gdy użytkownik najedzie myszką na elementy listy */
+    ul li {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    ul li:hover {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
